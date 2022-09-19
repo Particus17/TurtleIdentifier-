@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+*/
+/******************************************
+/* BASE STYLES
+/******************************************
+
+img{
+    position: relative;
+}
+button{
+    background: black;
+    color: white;
+    position: relative;
+}
+a{
+   color: white;
+   font-style: normal;
+}
+nav{
+    float: right;
+}
+li{
+    float: left;
+
+}
+.signin{
+    color: white;
+}
+form{
+    clear: both;
+}
+header{
+    height: 100px;
+    background:black;
+    max-width: 100%;
+    position: relative;
+    
+}
+#Home{
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+   
+}
+main{
+    width: 45%;
+    float: left;
+}
+#articles{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    
+}
+
+#body{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    margin: 200px 0;
+    padding: 200px 0;
+}
+.nEws{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+
+*****************************************
+/* LAYOUT
+/*******************************************
+
+
+.tension img , .health img, .workLife img, .folk img{
+    width: 250px;
+    height: 150px;
+
+}
+
+@media screen and (max-width:960px) {
+    #Home, #body{
+        
+    }
+}
+
+
+
+*****************************************
+/* Navbar and Logo
+/*******************************************/
+@media all and (max-width: 1000px){
+    
+
+    header{
+        width: 100%;
+        height: 65px;
+        background: #282726 ;
+        display: flex;
+    }
+    header a{
+        text-decoration: none;
+    }
+    .logo{
+        width: 200px;
+        height: 100px;
+    
+    }
+    .menuContainer{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;  
+        
+    }
+    .menuElements{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    /*****************************************/
+    /* Hero
+    /*******************************************/
+    #heroContainer{
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 2px solid red;
+        background: #08395e;
+
+    }
+    .hero{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px;
+        gap: 20px;
+        align-items: center ;
+
+    
+    }
+    h1{
+        width: 100%;
+        margin: 15px 0 0 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 28px;
+        color: #C6C2BB;
+    }
+    .main,
+    .imgContainer{
+        border: 2px solid green;
+        height: 400px;
+        width: 500px;
+    }
+    .main img{
+        height: 400px;
+        width: 500px;
+        box-shadow: 4px 4px 30px black;
+    }
+    .imgContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 40px;
+    padding: 50px 0 50px 20px;
+    }
+    .right{
+        border: 2px solid red;
+        width: 150px;
+        height: 100px;
+    }
+    /*****************************************/
+    /* Identification
+    /*******************************************/
+    #identify{
+        border: 2px solid orange;
+        height: 500px;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(189,182,150,1) 0%, rgba(29,194,58,1) 34%, rgba(11,219,188,1) 63%, rgba(19,46,191,1) 100%); 
+    }
+    .identifyContainer{
+        width: 100%;
+        height: 400px;
+        margin: 40px 0 0 0 ;
+        border: 2px solid #08395e;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    .card{
+        height: 300px ;
+        max-width: 35ch;  /* ch is basically how many characters long*/
+        color: aliceblue;
+        margin: 5px 30px;
+        box-shadow: 4px 4px 30px black;
+        overflow: hidden;
+    }
+    .card img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .tortoise{
+        background: hsl(147, 68%, 13%); 
+
+    }
+    .turtle{
+        background: hsl(39, 6%, 55% );
+    }
+    .terrapin{
+        background: hsl(41, 24%, 20% ); 
+    }
+    .intro{
+        width: 300px;
+        height: 200px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: absolute;
+    }
+
+    .intro h2{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .intro p{
+        font-size: 16;
+        margin: 20px;
+    
+    }
+
+    .card:hover{
+        cursor: pointer;
+    }
+    .card:hover .intro{
+        height: 220px;
+        bottom: 240px;
+    }
+}
