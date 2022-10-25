@@ -12,18 +12,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+      <!--swiper JS????-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <header>
         
-        <img class="logo" src="pics/particus.png" alt="logo">
+        <img class="logo" src="pics/cover.png" alt="logo">
         <nav class="menuContainer">
             <ul id="menu">
-                <li class="menuElements"><a  href="index.html" > News </a></li>
-                <li class="menuElements"><a href="socials.html">Social</a>  </li>
-                <li class="menuElements"><a  href="facts.html" >Learn</a>  </li>
+                <li class="menuElements"><a  href="index.html" > Home </a></li>
                 <li class="menuElements"><a  href="about.html" >About</a> </li>
+                <li class="menuElements"><a  href="facts.html" >Learn</a>  </li>
+                <li class="menuElements"><a href="donate.html"> Donate</a> </li>
             </ul>
         </nav>    
     </header>
@@ -32,60 +33,113 @@
          <section class="hero">
          
             <section class="main" > 
-                <img src="pics/SeaTurt.jpg" alt="Sea Turtle"> <!-- nth-child(1)-->
+                <img src="pics/turtleSite/SeaTurt.jpg" alt="Sea Turtle"> <!-- nth-child(1)-->
             </section>
             <article class="imgContainer">
-                <img class="img top" src="pics/snapperTurt.jpg" alt="SnappingTurtle"> <!-- nth-child(2) flex-end -->
-                <img class="img top" src="pics/TurtApp.jpg" alt="TurtleOpenMouth"> <!-- nth-child(3) flex-end -->
-                <img class="img bottom" src="pics/printOuts.png" alt="PrintOuts"> <!-- nth-child(4) flex-wrap -->
-                <img class="img bottom" src="pics/Types-of-Tortoise.jpg" alt="Types-of-Tortoise"> <!-- nth-child(5) flex-wrap -->
+                <img class="img top" src="pics/turtlesite/snapperTurt.jpg" alt="SnappingTurtle"> <!-- nth-child(2) flex-end -->
+                <img class="img top" src="pics/turtlesite/TurtApp.jpg" alt="TurtleOpenMouth"> <!-- nth-child(3) flex-end -->
+                <img class="img bottom" src="pics/turtlesite/printOuts.png" alt="PrintOuts"> <!-- nth-child(4) flex-wrap -->
+                <img class="img bottom" src="pics/turtlesite/Types-of-Tortoise.jpg" alt="Types-of-Tortoise"> <!-- nth-child(5) flex-wrap -->
             </article>
         </section>
     </section>
+
+<!--  Identify -->
+
     <section id="identify">
-        <h2> Did You Know?</h2>
+        <h2 class="h2"> Did You Know?</h2>
         <p> The use of the term 'turtle', 'tortoise', and 'terrapin' vary by geographic location. 
             They also don't usually reflect the scientific disctinctions between the different groups.
              Click on each Image below to learn more about the different groups! </p>
 
         <section class="identifyContainer">
             <!-- come up with some type of wrapper tag to go here. need 3s-->
-            <section class="card tortoise">
-                <img src="pics/africanTort.jpg" alt="AfricanTortoise">
-                <section class=" intro" >
-                    <h2> Testudine: Tortoise </h2>
-                    <p class="cardBody">
-                        <!-- info about species-->
-                        123 456 789 123 456 789 789 06
-                        </p>
-
-                    <button>Learn More</button>
+            <section class="slide-container swiper">
+                <section class="slide-content">
+                    <section class="cardWrapper swiper-wrapper">
+                        <section class="card tortoise swiper-slide">
+                            <section class="imgContent">
+                               <span class="overlayA">
+                                    <div class="cardImg">
+                                        <img src="pics/turtleSite/africanTort.jpg" alt="AfricanTortoise" class="innerImg">
+                                    </div>
+                                </span>
+                            </section>
+                            
+                                <section class=" intro" >
+                                    <h2> Testudine: Tortoise </h2>
+                                    <p class="cardBody">
+                                        <!-- info about species-->
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Aliquid accusantium illo ut vel molestiae, nobis aliquam 
+                                        quidem minima asperiores quis sed pariatur eum blanditiis corporis, 
+                                        animi vitae quo ducimus nulla quaerat ea facilis earum! Dolores!
+                                        </p>
+                
+                                    <button>Learn More</button>
+                                </section>
+                           
+                        </section>
+                        <section class=" card turtle swiper-slide">
+                            <section class="imgContent">
+                                <span class="overlayB">
+                                    <div class="cardImg">
+                                        <img src="pics/turtleSite/hawksbill.jpg" alt="Hawksbill" class="innerImg">
+                                    </div> 
+                                </span>
+                            </section>
+                                
+                            <section class="intro " >
+                                <h2> Testudine: Turtle </h2>
+                                <p class="cardBody">
+                                    l Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquid accusantium illo ut vel molestiae, nobis aliquam 
+                                    quidem minima asperiores quis sed pariatur eum blanditiis corporis, 
+                                    animi vitae quo ducimus nulla quaerat ea facilis earum! Dolores.
+                                    </p>
+            
+                                <button>Learn More</button>
+                            </section> 
+                           
+                        </section>
+                        <section class="card terrapin swiper-slide">
+                            <section class="imgContent">
+                               <span class="overlayA">
+                                    <div class="cardImg">
+                                        <img src="pics/turtleSite/dbTerrapin.jpg" alt="DiamondBack" class="innerImg">
+                                    </div>
+                                </span>  
+                            </section>
+                             
+                            <section class=" intro " >
+                                <h2> Testudine: Terrapin </h2>
+                                <p class="cardBody">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquid accusantium illo ut vel molestiae, nobis aliquam 
+                                    quidem minima asperiores quis sed pariatur eum blanditiis corporis, 
+                                    animi vitae quo ducimus nulla quaerat ea facilis earum! Dolores!
+                                    </p>
+            
+                                <button>Learn More</button>
+                            </section>
+                            
+                        </section>
+                    </section>
                 </section>
-            </section>
-            <section class=" card turtle">
-                <img src="pics/hawksbill.jpg" alt="Hawksbill">
-                <section class="intro " >
-                    <h2> Testudine: Turtle </h2>
-                    <p class="cardBody">
-                        <!-- info about species-->
-                        </p>
 
-                    <button>Learn More</button>
-                </section> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+    
             </section>
-            <section class="card terrapin">
-                <img src="pics/dbTerrapin.jpg" alt="DiamondBack">
-                <section class=" intro " >
-                    <h2> Testudine: Terrapin </h2>
-                    <p class="cardBody">
-                        <!-- info about species-->
-                        </p>
-
-                    <button>Learn More</button>
-                </section>
-           </section>
         </section>
     </section>
-
+    <!--main js-->
+    <script type="text/javascript" src="js/main.js"> </script>
+    <!-- Swiper JS-->
+    <script src="js/swiper-bundle.min.js"> </script>
+    <!--Javascript-->
+    <script src="script.js"></script>
 </body>
+
 </html>
