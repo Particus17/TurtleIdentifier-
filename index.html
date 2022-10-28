@@ -12,20 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-      <!--swiper JS????-->
+    <link rel="stylesheet" href="css/menu.css">
+      <!--swiper css-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
     <header>
         
         <img class="logo" src="pics/cover.png" alt="logo">
         <nav class="menuContainer">
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
             <ul id="menu">
                 <li class="menuElements"><a  href="index.html" > Home </a></li>
                 <li class="menuElements"><a  href="about.html" >About</a> </li>
                 <li class="menuElements"><a  href="facts.html" >Learn</a>  </li>
                 <li class="menuElements"><a href="donate.html"> Donate</a> </li>
+                <div class="closeMenu"><i class="fa fa-bars"></i></div>
             </ul>
+    
         </nav>    
     </header>
     <section id="heroContainer">
@@ -61,7 +67,7 @@
                             <section class="imgContent">
                                <span class="overlayA">
                                     <div class="cardImg">
-                                        <img src="pics/turtleSite/africanTort.jpg" alt="AfricanTortoise" class="innerImg">
+                                        <img src="pics/turtleSite/africanTort.jpg" alt="AfricanTortoise" class="innerImg africanTort">
                                     </div>
                                 </span>
                             </section>
@@ -84,7 +90,7 @@
                             <section class="imgContent">
                                 <span class="overlayB">
                                     <div class="cardImg">
-                                        <img src="pics/turtleSite/hawksbill.jpg" alt="Hawksbill" class="innerImg">
+                                        <img src="pics/turtleSite/hawksbill.jpg" alt="Hawksbill" class="innerImg hawksbill">
                                     </div> 
                                 </span>
                             </section>
@@ -104,9 +110,9 @@
                         </section>
                         <section class="card terrapin swiper-slide">
                             <section class="imgContent">
-                               <span class="overlayA">
+                               <span class="overlayC">
                                     <div class="cardImg">
-                                        <img src="pics/turtleSite/dbTerrapin.jpg" alt="DiamondBack" class="innerImg">
+                                        <img src="pics/turtleSite/dbTerrapin.jpg" alt="DiamondBack" class="innerImg db">
                                     </div>
                                 </span>  
                             </section>
@@ -138,8 +144,10 @@
     <script type="text/javascript" src="js/main.js"> </script>
     <!-- Swiper JS-->
     <script src="js/swiper-bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <!--Javascript-->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
